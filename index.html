@@ -1,1 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PDU for CSMs | Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Everything CSMs need to engage PagerDuty University (PDU): programs, recordings, calendar, webinars, offerings, FAQs, and links.">
+  <style>
+    :root {
+      --brand: #1e7f4f; 
+      --brand-dark: #155c3a;
+      --ink: #0f1a1c;
+      --muted: #576166;
+      --bg: #f7faf9;
+      --card: #ffffff;
+      --border: #e4e9e7;
+      --radius: 12px;
+      --shadow: 0 4px 16px rgba(0,0,0,.06);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.55; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.8); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav .brand { font-weight: 700; color: var(--ink); }
+    .nav ul { display: flex; gap: 18px; list-style: none; margin: 0; padding: 0; }
+    .nav a { color: var(--ink); font-weight: 500; }
+    .hero { background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%); color: white; padding: 64px 0; }
+    .hero h1 { margin: 0 0 10px; font-size: 34px; }
+    .hero p { margin: 0 0 22px; color: #eaf4ef; max-width: 800px; }
+    .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; border-radius: 8px; border: 1px solid transparent; padding: 10px 14px; font-weight: 600; cursor: pointer; text-decoration: none; }
+    .btn-primary { background: white; color: var(--brand-dark); }
+    .btn-outline { background: transparent; color: white; border-color: rgba(255,255,255,.5); }
+    section { padding: 40px 0; }
+    .grid { display: grid; gap: 16px; }
+    @media (min-width: 900px) { .grid-3 { grid-template-columns: repeat(3, 1fr); } .grid-2 { grid-template-columns: repeat(2, 1fr); } }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px; }
+    h2 { margin: 0 0 10px; font-size: 24px; }
+    h3 { margin: 12px 0 6px; font-size: 18px; }
+    .muted { color: var(--muted); }
+    .list { margin: 8px 0 0 18px; }
+    .kpi { display: flex; gap: 16px; flex-wrap: wrap; }
+    .kpi .item { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; min-width: 160px; }
+    .tag { display: inline-block; font-size: 12px; color: var(--brand-dark); background: #e6f3ed; border: 1px solid #d1e7dc; border-radius: 999px; padding: 2px 8px; }
+    details { border: 1px solid var(--border); border-radius: 10px; background: #fff; padding: 12px 14px; }
+    details + details { margin-top: 10px; }
+    summary { cursor: pointer; font-weight: 600; }
+    .footer { color: var(--muted); font-size: 14px; padding: 24px 0 50px; }
+    .pill-links { display: flex; gap: 10px; flex-wrap: wrap; }
+    .pill-links a { background: #fff; border: 1px solid var(--border); border-radius: 999px; padding: 6px 10px; font-weight: 600; }
+    .search { position: relative; }
+    .search input { width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--border); outline: none; }
+    .hide { display: none !important; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">PDU for CSMs</div>
+      <nav>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#engage">How to Engage</a></li>
+          <li><a href="#catalog">Programs</a></li>
+          <li><a href="#assets">Resources</a></li>
+          <li><a href="#calendar">Calendar</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <div class="hero">
+    <div class="container">
+      <h1>PDU: Everything a CSM needs, in one place</h1>
+      <p>Use PagerDuty University to drive adoption, maturity, and measurable outcomes. Find programs, recordings, webinars, calendar, and FAQs.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#catalog">Browse Programs</a>
+        <a class="btn btn-outline" href="https://pagerduty.enterprise.slack.com/archives/C5UAGL0JX" target="_blank" rel="noopener">Join Slack</a>
+        <a class="btn btn-outline" href="https://calendly.com/d/cmxm-n4v-hgm" target="_blank" rel="noopener">Open Calendar</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <section id="overview">
+      <h2>Overview</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>What is PDU?</h3>
+          <p class="muted">PagerDuty University delivers role-based enablement for customers across incident response, operations maturity, and digital operations best practices.</p>
+          <div class="pill-links">
+            <a href="https://pagerduty.atlassian.net/wiki/spaces/PDUN/overview?homepageId=791973344" target="_blank">Confluence: PDU Home</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Value to CSMs</h3>
+          <ul class="list">
+            <li>Accelerate onboarding and time-to-value</li>
+            <li>Increase adoption of key features</li>
+            <li>Drive maturity and renewal readiness</li>
+            <li>Create multi-threaded champions</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Proof & Impact</h3>
+          <div class="kpi">
+            <div class="item">
+              <div class="tag">Adoption</div>
+              <div><strong>+X%</strong> feature uptake post-training</div>
+            </div>
+            <div class="item">
+              <div class="tag">Time-to-Value</div>
+              <div><strong>-Y weeks</strong> onboarding time</div>
+            </div>
+            <div class="item">
+              <div class="tag">CSAT</div>
+              <div><strong>4.8/5</strong> avg session rating</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="engage">
+      <h2>How to Engage PDU</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>When to Bring PDU In</h3>
+          <ul class="list">
+            <li>New logos or expansions needing structured onboarding</li>
+            <li>Low adoption or maturity gaps surfaced in QBRs</li>
+            <li>Leadership asking for training or standardization</li>
+            <li>Pre-renewal risk mitigation via best-practice uplift</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>How It Works</h3>
+          <ol class="list">
+            <li>Share customer goals, audiences, and timing in Slack or with the PDU team</li>
+            <li>PDU scopes and confirms delivery plan</li>
+            <li>Customer comms + calendar sent; materials shared</li>
+            <li>Delivery + outcomes recap back to CSM</li>
+          </ol>
+          <div class="pill-links">
+            <a href="https://pagerduty.enterprise.slack.com/archives/C5UAGL0JX" target="_blank">Slack: #pdu</a>
+            <a href="https://calendly.com/d/cmxm-n4v-hgm" target="_blank">Scheduling Calendar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalog">
+      <h2>Programs & Catalog</h2>
+      <div class="muted" style="margin-bottom:10px">Role-based and outcome-focused. Mix of live and on-demand.</div>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>PDU Offerings</h3>
+          <p class="muted">Full list of courses and delivery options.</p>
+          <a href="https://docs.google.com/spreadsheets/d/1VHm91Xjwv5LkKJmx3WlPCx-evFYFghNM0DOhEwOUUL0/edit?gid=114402429#gid=114402429" target="_blank">Open Offerings (Google Sheet)</a>
+        </div>
+        <div class="card">
+          <h3>Recordings & On‑Demand</h3>
+          <p class="muted">Self-serve modules and course recordings.</p>
+          <a href="https://university.pagerduty.com/" target="_blank">Go to PagerDuty University</a>
+        </div>
+        <div class="card">
+          <h3>Webinars</h3>
+          <p class="muted">Customer-facing webinars to support adoption.</p>
+          <a href="https://www.pagerduty.com/resources/?type=webinar" target="_blank">Browse Webinars</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="assets">
+      <h2>Resources</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Core Links</h3>
+          <a href="https://pagerduty.atlassian.net/wiki/spaces/PDUN/overview?homepageId=791973344" target="_blank">Confluence: PDU Home</a><br>
+          <a href="https://pagerduty.enterprise.slack.com/archives/C5UAGL0JX" target="_blank">Slack: #pdu</a>
+        </div>
+        <div class="card">
+          <h3>Programs</h3>
+          <a href="https://docs.google.com/spreadsheets/d/1VHm91Xjwv5LkKJmx3WlPCx-evFYFghNM0DOhEwOUUL0/edit?gid=114402429#gid=114402429" target="_blank">PDU Offerings</a><br>
+          <a href="https://university.pagerduty.com/" target="_blank">Recordings & On‑Demand</a>
+        </div>
+        <div class="card">
+          <h3>Events</h3>
+          <a href="https://www.pagerduty.com/resources/?type=webinar" target="_blank">Webinars</a><br>
+          <a href="https://calendly.com/d/cmxm-n4v-hgm" target="_blank">Scheduling Calendar</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="calendar">
+      <h2>Availability & Calendar</h2>
+      <div class="card">
+        <p>See upcoming availability and coordinate sessions with PDU.</p>
+        <a class="btn" href="https://calendly.com/d/cmxm-n4v-hgm" target="_blank">Open Calendar</a>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <div class="search" style="margin: 8px 0 14px;">
+        <input id="faqSearch" placeholder="Search FAQs (eligibility, recording, localization, etc.)">
+      </div>
+      <details class="faq-item"><summary>Is PDU included or billable?</summary><div>Refer to packaging/pricing guidance in Confluence: <a href="https://pagerduty.atlassian.net/wiki/spaces/PDUN/overview?homepageId=791973344" target="_blank">PDU Home</a>.</div></details>
+      <details class="faq-item"><summary>Do you offer recordings and localized sessions?</summary><div>Recordings are available via <a href="https://university.pagerduty.com/" target="_blank">PagerDuty University</a>. Localization availability details are maintained in Confluence.</div></details>
+      <details class="faq-item"><summary>How do I engage PDU for a customer?</summary><div>Use <a href="https://pagerduty.enterprise.slack.com/archives/C5UAGL0JX" target="_blank">#pdu</a> to share goals, audience, and timing, or coordinate using the <a href="https://calendly.com/d/cmxm-n4v-hgm" target="_blank">calendar</a>.</div></details>
+    </section>
+
+    <div class="footer">
+      <p>Questions? Ping <a href="https://pagerduty.enterprise.slack.com/archives/C5UAGL0JX" target="_blank">#pdu</a> or visit <a href="https://pagerduty.atlassian.net/wiki/spaces/PDUN/overview?homepageId=791973344" target="_blank">Confluence: PDU Home</a>.</p>
+    </div>
+  </main>
+
+  <script>
+    // Simple client-side FAQ search
+    const q = document.getElementById('faqSearch');
+    const items = document.querySelectorAll('.faq-item');
+    q?.addEventListener('input', () => {
+      const term = q.value.toLowerCase().trim();
+      items.forEach(d => {
+        const text = d.textContent.toLowerCase();
+        d.classList.toggle('hide', term && !text.includes(term));
+      });
+    });
+  </script>
+</body>
+</html>
